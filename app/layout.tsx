@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
+import { APP_NAME } from "@/lib/constants";
+import { APP_DESCRIPTION } from "@/lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "New Wave Vapes",
-  description: "New Wave Vapes is a vape shop that sells state of the art vapes and vape accessories.",
+  title: `${APP_NAME}`,
+  description: `${APP_DESCRIPTION}`,
 };
 
 export default function RootLayout({
